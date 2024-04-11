@@ -47,7 +47,14 @@ public:
             switch (player->getClass())
             {
             case CLASS_WARRIOR:
-                AddGossipItemFor(player, GOSSIP_ICON_CHAT, "I want to be an Arms Warrior.", GOSSIP_SENDER_MAIN, GOSSIP_MENU_SPECIALIZATION_1);
+    if (player->GetSession()->GetSessionDbLocaleIndex() == LOCALE_zhCN)
+    {
+        AddGossipItemFor(player, GOSSIP_ICON_CHAT, "我想成为武器战士。", GOSSIP_SENDER_MAIN, GOSSIP_MENU_SPECIALIZATION_1);
+    }
+    else
+    {
+        AddGossipItemFor(player, GOSSIP_ICON_CHAT, "I want to be an Arms Warrior.", GOSSIP_SENDER_MAIN, GOSSIP_MENU_SPECIALIZATION_1);
+    }
                 AddGossipItemFor(player, GOSSIP_ICON_CHAT, "I want to be a Fury Warrior.", GOSSIP_SENDER_MAIN, GOSSIP_MENU_SPECIALIZATION_2);
                 AddGossipItemFor(player, GOSSIP_ICON_CHAT, "I want to be a Protection Warrior.", GOSSIP_SENDER_MAIN, GOSSIP_MENU_SPECIALIZATION_3);
                 break;
