@@ -1,4 +1,4 @@
-UPDATE `item_template` SET `subclass`=4, `name`='Certificate of Appreciation', `description`='May be used to give your character a boost', `Quality`=7, `Flags`=134217728, `ItemLevel`=1, `RequiredLevel`=0, `maxcount`=0, `dmg_min1`=0, `dmg_max1`=0, `bonding`=0 WHERE `entry`=20460;
+UPDATE `item_template` SET `subclass`=4, `name`='Certificate of Appreciation', `description`='May be used to give your character a level boost!', `Quality`=7, `Flags`=134217728, `ItemLevel`=1, `RequiredLevel`=0, `maxcount`=0, `dmg_min1`=0, `dmg_max1`=0, `bonding`=0 WHERE `entry`=20460;
 
 SET @Entry := 6000000;
 
