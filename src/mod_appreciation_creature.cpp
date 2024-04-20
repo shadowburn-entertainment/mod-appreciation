@@ -46,72 +46,284 @@ public:
 
             switch (player->getClass())
             {
-            case CLASS_WARRIOR:
-    if (player->GetSession()->GetSessionDbLocaleIndex() == LOCALE_zhCN)
-    {
-        AddGossipItemFor(player, GOSSIP_ICON_CHAT, "我想成为武器战士。", GOSSIP_SENDER_MAIN, GOSSIP_MENU_SPECIALIZATION_1);
+    case CLASS_WARRIOR:
+        if (player->GetSession()->GetSessionDbLocaleIndex() == LOCALE_zhCN)
+        {
+            AddGossipItemFor(player, GOSSIP_ICON_CHAT, "我想成为一名武装战士.", GOSSIP_SENDER_MAIN, GOSSIP_MENU_SPECIALIZATION_1);
+        }
+        else
+        {
+            AddGossipItemFor(player, GOSSIP_ICON_CHAT, "I want to be an Arms Warrior.", GOSSIP_SENDER_MAIN, GOSSIP_MENU_SPECIALIZATION_1);
+        }
+        if (player->GetSession()->GetSessionDbLocaleIndex() == LOCALE_zhCN)
+        {
+            AddGossipItemFor(player, GOSSIP_ICON_CHAT, "我想成为一名狂暴战士.", GOSSIP_SENDER_MAIN, GOSSIP_MENU_SPECIALIZATION_2);
+        }
+        else
+        {
+            AddGossipItemFor(player, GOSSIP_ICON_CHAT, "I want to be a Fury Warrior.", GOSSIP_SENDER_MAIN, GOSSIP_MENU_SPECIALIZATION_2);
+        }
+        if (player->GetSession()->GetSessionDbLocaleIndex() == LOCALE_zhCN)
+        {
+            AddGossipItemFor(player, GOSSIP_ICON_CHAT, "我想成为一名守护战士.", GOSSIP_SENDER_MAIN, GOSSIP_MENU_SPECIALIZATION_3);
+        }
+        else
+        {
+            AddGossipItemFor(player, GOSSIP_ICON_CHAT, "I want to be a Protection Warrior.", GOSSIP_SENDER_MAIN, GOSSIP_MENU_SPECIALIZATION_3);
+        }
+        break;
+   case CLASS_PALADIN:
+        if (player->GetSession()->GetSessionDbLocaleIndex() == LOCALE_zhCN)
+        {
+            AddGossipItemFor(player, GOSSIP_ICON_CHAT, "我想成为圣骑士.", GOSSIP_SENDER_MAIN, GOSSIP_MENU_SPECIALIZATION_1);
+        }
+        else
+        {
+            AddGossipItemFor(player, GOSSIP_ICON_CHAT, "I want to be a Holy Paladin.", GOSSIP_SENDER_MAIN, GOSSIP_MENU_SPECIALIZATION_1);
+        }
+        if (player->GetSession()->GetSessionDbLocaleIndex() == LOCALE_zhCN)
+        {
+            AddGossipItemFor(player, GOSSIP_ICON_CHAT, "我想成为一名保护圣骑士.", GOSSIP_SENDER_MAIN, GOSSIP_MENU_SPECIALIZATION_2);
+        }
+        else
+        {
+            AddGossipItemFor(player, GOSSIP_ICON_CHAT, "I want to be a Protection Paladin.", GOSSIP_SENDER_MAIN, GOSSIP_MENU_SPECIALIZATION_2);
+        }
+        if (player->GetSession()->GetSessionDbLocaleIndex() == LOCALE_zhCN)
+        {
+            AddGossipItemFor(player, GOSSIP_ICON_CHAT, "我想成为惩戒圣骑士.", GOSSIP_SENDER_MAIN, GOSSIP_MENU_SPECIALIZATION_3);
+        }
+        else
+        {
+            AddGossipItemFor(player, GOSSIP_ICON_CHAT, "I want to be a Retribution Paladin.", GOSSIP_SENDER_MAIN, GOSSIP_MENU_SPECIALIZATION_3);
+        }
+        break;
+    case CLASS_HUNTER:
+        if (player->GetSession()->GetSessionDbLocaleIndex() == LOCALE_zhCN)
+        {
+            AddGossipItemFor(player, GOSSIP_ICON_CHAT, "我想成为一名驯兽猎人.", GOSSIP_SENDER_MAIN, GOSSIP_MENU_SPECIALIZATION_1);
+        }
+        else
+        {
+            AddGossipItemFor(player, GOSSIP_ICON_CHAT, "I want to be a Beast Mastery Hunter.", GOSSIP_SENDER_MAIN, GOSSIP_MENU_SPECIALIZATION_1);
+        }
+        if (player->GetSession()->GetSessionDbLocaleIndex() == LOCALE_zhCN)
+        {
+            AddGossipItemFor(player, GOSSIP_ICON_CHAT, "我想成为一名射击猎人.", GOSSIP_SENDER_MAIN, GOSSIP_MENU_SPECIALIZATION_2);
+        }
+        else
+        {
+            AddGossipItemFor(player, GOSSIP_ICON_CHAT, "I want to be a Marksmanship Hunter.", GOSSIP_SENDER_MAIN, GOSSIP_MENU_SPECIALIZATION_2);
+        }
+        if (player->GetSession()->GetSessionDbLocaleIndex() == LOCALE_zhCN)
+        {
+            AddGossipItemFor(player, GOSSIP_ICON_CHAT, "我想成为一名生存猎人.", GOSSIP_SENDER_MAIN, GOSSIP_MENU_SPECIALIZATION_3);
+        }
+        else
+        {
+            AddGossipItemFor(player, GOSSIP_ICON_CHAT, "I want to be a Survival Hunter.", GOSSIP_SENDER_MAIN, GOSSIP_MENU_SPECIALIZATION_3);
+        }
+        break;
+    case CLASS_ROGUE:
+        if (player->GetSession()->GetSessionDbLocaleIndex() == LOCALE_zhCN)
+        {
+            AddGossipItemFor(player, GOSSIP_ICON_CHAT, "我想成为暗杀盗贼.", GOSSIP_SENDER_MAIN, GOSSIP_MENU_SPECIALIZATION_1);
+        }
+        else
+        {
+            AddGossipItemFor(player, GOSSIP_ICON_CHAT, "I want to be an Assassination Rogue.", GOSSIP_SENDER_MAIN, GOSSIP_MENU_SPECIALIZATION_1);
+        }
+        if (player->GetSession()->GetSessionDbLocaleIndex() == LOCALE_zhCN)
+        {
+            AddGossipItemFor(player, GOSSIP_ICON_CHAT, "我想成为战斗盗贼.", GOSSIP_SENDER_MAIN, GOSSIP_MENU_SPECIALIZATION_2);
+        }
+        else
+        {
+            AddGossipItemFor(player, GOSSIP_ICON_CHAT, "I want to be a Combat Rogue.", GOSSIP_SENDER_MAIN, GOSSIP_MENU_SPECIALIZATION_2);
+        }
+        if (player->GetSession()->GetSessionDbLocaleIndex() == LOCALE_zhCN)
+        {
+            AddGossipItemFor(player, GOSSIP_ICON_CHAT, "我想成为一名狡猾的盗贼.", GOSSIP_SENDER_MAIN, GOSSIP_MENU_SPECIALIZATION_3);
+        }
+        else
+        {
+            AddGossipItemFor(player, GOSSIP_ICON_CHAT, "I want to be a Subtlety Rogue.", GOSSIP_SENDER_MAIN, GOSSIP_MENU_SPECIALIZATION_3);
+        }
+        break;
+    case CLASS_PRIEST:
+        if (player->GetSession()->GetSessionDbLocaleIndex() == LOCALE_zhCN)
+        {
+            AddGossipItemFor(player, GOSSIP_ICON_CHAT, "我想成为一名戒律牧师.", GOSSIP_SENDER_MAIN, GOSSIP_MENU_SPECIALIZATION_1);
+        }
+        else
+        {
+            AddGossipItemFor(player, GOSSIP_ICON_CHAT, "I want to be a Discipline Priest.", GOSSIP_SENDER_MAIN, GOSSIP_MENU_SPECIALIZATION_1);
+        }
+        if (player->GetSession()->GetSessionDbLocaleIndex() == LOCALE_zhCN)
+        {
+            AddGossipItemFor(player, GOSSIP_ICON_CHAT, "我想成为一名圣祭司.", GOSSIP_SENDER_MAIN, GOSSIP_MENU_SPECIALIZATION_2);
+        }
+        else
+        {
+            AddGossipItemFor(player, GOSSIP_ICON_CHAT, "I want to be a Holy Priest.", GOSSIP_SENDER_MAIN, GOSSIP_MENU_SPECIALIZATION_2);
+        }
+        if (player->GetSession()->GetSessionDbLocaleIndex() == LOCALE_zhCN)
+        {
+            AddGossipItemFor(player, GOSSIP_ICON_CHAT, "我想成为暗影牧师.", GOSSIP_SENDER_MAIN, GOSSIP_MENU_SPECIALIZATION_3);
+        }
+        else
+        {
+            AddGossipItemFor(player, GOSSIP_ICON_CHAT, "I want to be a Shadow Priest.", GOSSIP_SENDER_MAIN, GOSSIP_MENU_SPECIALIZATION_3);
+        }
+        break;
+    case CLASS_DEATH_KNIGHT:
+        if (player->GetSession()->GetSessionDbLocaleIndex() == LOCALE_zhCN)
+        {
+            AddGossipItemFor(player, GOSSIP_ICON_CHAT, "我想成为血腥死亡骑士.", GOSSIP_SENDER_MAIN, GOSSIP_MENU_SPECIALIZATION_1);
+        }
+        else
+        {
+            AddGossipItemFor(player, GOSSIP_ICON_CHAT, "I want to be a Blood Death Knight.", GOSSIP_SENDER_MAIN, GOSSIP_MENU_SPECIALIZATION_1);
+        }
+        if (player->GetSession()->GetSessionDbLocaleIndex() == LOCALE_zhCN)
+        {
+            AddGossipItemFor(player, GOSSIP_ICON_CHAT, "我想成为冰霜死亡骑士.", GOSSIP_SENDER_MAIN, GOSSIP_MENU_SPECIALIZATION_2);
+        }
+        else
+        {
+            AddGossipItemFor(player, GOSSIP_ICON_CHAT, "I want to be a Frost Death Knight.", GOSSIP_SENDER_MAIN, GOSSIP_MENU_SPECIALIZATION_2);
+        }
+        if (player->GetSession()->GetSessionDbLocaleIndex() == LOCALE_zhCN)
+        {
+            AddGossipItemFor(player, GOSSIP_ICON_CHAT, "我想成为邪恶的死亡骑士.", GOSSIP_SENDER_MAIN, GOSSIP_MENU_SPECIALIZATION_3);
+        }
+        else
+        {
+            AddGossipItemFor(player, GOSSIP_ICON_CHAT, "I want to be a Unholy Death Knight.", GOSSIP_SENDER_MAIN, GOSSIP_MENU_SPECIALIZATION_3);
+        }
+        break;
+    case CLASS_SHAMAN:
+        if (player->GetSession()->GetSessionDbLocaleIndex() == LOCALE_zhCN)
+        {
+            AddGossipItemFor(player, GOSSIP_ICON_CHAT, "我想成为一名元素萨满.", GOSSIP_SENDER_MAIN, GOSSIP_MENU_SPECIALIZATION_1);
+        }
+        else
+        {
+            AddGossipItemFor(player, GOSSIP_ICON_CHAT, "I want to be an Elemental Shaman.", GOSSIP_SENDER_MAIN, GOSSIP_MENU_SPECIALIZATION_1);
+        }
+        if (player->GetSession()->GetSessionDbLocaleIndex() == LOCALE_zhCN)
+        {
+            AddGossipItemFor(player, GOSSIP_ICON_CHAT, "我想成为一名强化萨满.", GOSSIP_SENDER_MAIN, GOSSIP_MENU_SPECIALIZATION_2);
+        }
+        else
+        {
+            AddGossipItemFor(player, GOSSIP_ICON_CHAT, "I want to be an Enhancement Shaman.", GOSSIP_SENDER_MAIN, GOSSIP_MENU_SPECIALIZATION_2);
+        }
+        if (player->GetSession()->GetSessionDbLocaleIndex() == LOCALE_zhCN)
+        {
+            AddGossipItemFor(player, GOSSIP_ICON_CHAT, "我想成为一名恢复萨满.", GOSSIP_SENDER_MAIN, GOSSIP_MENU_SPECIALIZATION_3);
+        }
+        else
+        {
+            AddGossipItemFor(player, GOSSIP_ICON_CHAT, "I want to be a Restoration Shaman.", GOSSIP_SENDER_MAIN, GOSSIP_MENU_SPECIALIZATION_3);
+        }
+        break;
+    case CLASS_MAGE:
+        if (player->GetSession()->GetSessionDbLocaleIndex() == LOCALE_zhCN)
+        {
+            AddGossipItemFor(player, GOSSIP_ICON_CHAT, "我想成为一名奥术法师.", GOSSIP_SENDER_MAIN, GOSSIP_MENU_SPECIALIZATION_1);
+        }
+        else
+        {
+            AddGossipItemFor(player, GOSSIP_ICON_CHAT, "I want to be an Arcane Mage.", GOSSIP_SENDER_MAIN, GOSSIP_MENU_SPECIALIZATION_1);
+        }
+        if (player->GetSession()->GetSessionDbLocaleIndex() == LOCALE_zhCN)
+        {
+            AddGossipItemFor(player, GOSSIP_ICON_CHAT, "我想成为火系法师.", GOSSIP_SENDER_MAIN, GOSSIP_MENU_SPECIALIZATION_2);
+        }
+        else
+        {
+            AddGossipItemFor(player, GOSSIP_ICON_CHAT, "I want to be a Fire Mage.", GOSSIP_SENDER_MAIN, GOSSIP_MENU_SPECIALIZATION_2);
+        }
+        if (player->GetSession()->GetSessionDbLocaleIndex() == LOCALE_zhCN)
+        {
+            AddGossipItemFor(player, GOSSIP_ICON_CHAT, "我想成为冰霜法师.", GOSSIP_SENDER_MAIN, GOSSIP_MENU_SPECIALIZATION_3);
+        }
+        else
+        {
+            AddGossipItemFor(player, GOSSIP_ICON_CHAT, "I want to be a Frost Mage.", GOSSIP_SENDER_MAIN, GOSSIP_MENU_SPECIALIZATION_3);
+        }
+        break;
+    case CLASS_WARLOCK:
+        if (player->GetSession()->GetSessionDbLocaleIndex() == LOCALE_zhCN)
+        {
+            AddGossipItemFor(player, GOSSIP_ICON_CHAT, "我想成为一名痛苦术士.", GOSSIP_SENDER_MAIN, GOSSIP_MENU_SPECIALIZATION_1);
+        }
+        else
+        {
+            AddGossipItemFor(player, GOSSIP_ICON_CHAT, "I want to be an Affliction Warlock.", GOSSIP_SENDER_MAIN, GOSSIP_MENU_SPECIALIZATION_1);
+        }
+        if (player->GetSession()->GetSessionDbLocaleIndex() == LOCALE_zhCN)
+        {
+            AddGossipItemFor(player, GOSSIP_ICON_CHAT, "我想成为一名恶魔术士.", GOSSIP_SENDER_MAIN, GOSSIP_MENU_SPECIALIZATION_2);
+        }
+        else
+        {
+            AddGossipItemFor(player, GOSSIP_ICON_CHAT, "I want to be a Demonology Warlock.", GOSSIP_SENDER_MAIN, GOSSIP_MENU_SPECIALIZATION_2);
+        }
+        if (player->GetSession()->GetSessionDbLocaleIndex() == LOCALE_zhCN)
+        {
+            AddGossipItemFor(player, GOSSIP_ICON_CHAT, "我想成为毁灭术士.", GOSSIP_SENDER_MAIN, GOSSIP_MENU_SPECIALIZATION_3);
+        }
+        else
+        {
+            AddGossipItemFor(player, GOSSIP_ICON_CHAT, "I want to be a Destruction Warlock.", GOSSIP_SENDER_MAIN, GOSSIP_MENU_SPECIALIZATION_3);
+        }
+        break;
+    case CLASS_DRUID:
+        if (player->GetSession()->GetSessionDbLocaleIndex() == LOCALE_zhCN)
+        {
+            AddGossipItemFor(player, GOSSIP_ICON_CHAT, "我想成为平衡德鲁伊.", GOSSIP_SENDER_MAIN, GOSSIP_MENU_SPECIALIZATION_1);
+        }
+        else
+        {
+            AddGossipItemFor(player, GOSSIP_ICON_CHAT, "I want to be a Balance Druid.", GOSSIP_SENDER_MAIN, GOSSIP_MENU_SPECIALIZATION_1);
+        }
+        if (player->GetSession()->GetSessionDbLocaleIndex() == LOCALE_zhCN)
+        {
+            AddGossipItemFor(player, GOSSIP_ICON_CHAT, "我想成为一名野性德鲁伊.", GOSSIP_SENDER_MAIN, GOSSIP_MENU_SPECIALIZATION_2);
+        }
+        else
+        {
+            AddGossipItemFor(player, GOSSIP_ICON_CHAT, "I want to be a Feral Druid.", GOSSIP_SENDER_MAIN, GOSSIP_MENU_SPECIALIZATION_2);
+        }
+        if (player->GetSession()->GetSessionDbLocaleIndex() == LOCALE_zhCN)
+        {
+            AddGossipItemFor(player, GOSSIP_ICON_CHAT, "我想成为一名恢复德鲁伊.", GOSSIP_SENDER_MAIN, GOSSIP_MENU_SPECIALIZATION_3);
+        }
+        else
+        {
+            AddGossipItemFor(player, GOSSIP_ICON_CHAT, "I want to be a Restoration Druid.", GOSSIP_SENDER_MAIN, GOSSIP_MENU_SPECIALIZATION_3);
+        }
+        break;
     }
-    else
-    {
-        AddGossipItemFor(player, GOSSIP_ICON_CHAT, "I want to be an Arms Warrior.", GOSSIP_SENDER_MAIN, GOSSIP_MENU_SPECIALIZATION_1);
-    }
-                AddGossipItemFor(player, GOSSIP_ICON_CHAT, "I want to be a Fury Warrior.", GOSSIP_SENDER_MAIN, GOSSIP_MENU_SPECIALIZATION_2);
-                AddGossipItemFor(player, GOSSIP_ICON_CHAT, "I want to be a Protection Warrior.", GOSSIP_SENDER_MAIN, GOSSIP_MENU_SPECIALIZATION_3);
-                break;
-            case CLASS_PALADIN:
-                AddGossipItemFor(player, GOSSIP_ICON_CHAT, "I want to be a Holy Paladin.", GOSSIP_SENDER_MAIN, GOSSIP_MENU_SPECIALIZATION_1);
-                AddGossipItemFor(player, GOSSIP_ICON_CHAT, "I want to be a Protection Paladin.", GOSSIP_SENDER_MAIN, GOSSIP_MENU_SPECIALIZATION_2);
-                AddGossipItemFor(player, GOSSIP_ICON_CHAT, "I want to be a Retribution Paladin.", GOSSIP_SENDER_MAIN, GOSSIP_MENU_SPECIALIZATION_3);
-                break;
-            case CLASS_HUNTER:
-                AddGossipItemFor(player, GOSSIP_ICON_CHAT, "I want to be a Beast Mastery Hunter.", GOSSIP_SENDER_MAIN, GOSSIP_MENU_SPECIALIZATION_1);
-                AddGossipItemFor(player, GOSSIP_ICON_CHAT, "I want to be a Marksmanship Hunter.", GOSSIP_SENDER_MAIN, GOSSIP_MENU_SPECIALIZATION_2);
-                AddGossipItemFor(player, GOSSIP_ICON_CHAT, "I want to be a Survival Hunter.", GOSSIP_SENDER_MAIN, GOSSIP_MENU_SPECIALIZATION_3);
-                break;
-            case CLASS_ROGUE:
-                AddGossipItemFor(player, GOSSIP_ICON_CHAT, "I want to be an Assassination Rogue.", GOSSIP_SENDER_MAIN, GOSSIP_MENU_SPECIALIZATION_1);
-                AddGossipItemFor(player, GOSSIP_ICON_CHAT, "I want to be a Combat Rogue.", GOSSIP_SENDER_MAIN, GOSSIP_MENU_SPECIALIZATION_2);
-                AddGossipItemFor(player, GOSSIP_ICON_CHAT, "I want to be a Subtlety Rogue.", GOSSIP_SENDER_MAIN, GOSSIP_MENU_SPECIALIZATION_3);
-                break;
-            case CLASS_PRIEST:
-                AddGossipItemFor(player, GOSSIP_ICON_CHAT, "I want to be a Discipline Priest.", GOSSIP_SENDER_MAIN, GOSSIP_MENU_SPECIALIZATION_1);
-                AddGossipItemFor(player, GOSSIP_ICON_CHAT, "I want to be a Holy Priest.", GOSSIP_SENDER_MAIN, GOSSIP_MENU_SPECIALIZATION_2);
-                AddGossipItemFor(player, GOSSIP_ICON_CHAT, "I want to be a Shadow Priest.", GOSSIP_SENDER_MAIN, GOSSIP_MENU_SPECIALIZATION_3);
-                break;
-            case CLASS_DEATH_KNIGHT:
-                AddGossipItemFor(player, GOSSIP_ICON_CHAT, "I want to be a Blood Death Knight.", GOSSIP_SENDER_MAIN, GOSSIP_MENU_SPECIALIZATION_1);
-                AddGossipItemFor(player, GOSSIP_ICON_CHAT, "I want to be a Frost Death Knight.", GOSSIP_SENDER_MAIN, GOSSIP_MENU_SPECIALIZATION_2);
-                AddGossipItemFor(player, GOSSIP_ICON_CHAT, "I want to be a Unholy Death Knight.", GOSSIP_SENDER_MAIN, GOSSIP_MENU_SPECIALIZATION_3);
-                break;
-            case CLASS_SHAMAN:
-                AddGossipItemFor(player, GOSSIP_ICON_CHAT, "I want to be an Elemental Shaman.", GOSSIP_SENDER_MAIN, GOSSIP_MENU_SPECIALIZATION_1);
-                AddGossipItemFor(player, GOSSIP_ICON_CHAT, "I want to be an Enhancement Shaman.", GOSSIP_SENDER_MAIN, GOSSIP_MENU_SPECIALIZATION_2);
-                AddGossipItemFor(player, GOSSIP_ICON_CHAT, "I want to be a Restoration Shaman.", GOSSIP_SENDER_MAIN, GOSSIP_MENU_SPECIALIZATION_3);
-                break;
-            case CLASS_MAGE:
-                AddGossipItemFor(player, GOSSIP_ICON_CHAT, "I want to be an Arcane Mage.", GOSSIP_SENDER_MAIN, GOSSIP_MENU_SPECIALIZATION_1);
-                AddGossipItemFor(player, GOSSIP_ICON_CHAT, "I want to be a Fire Mage.", GOSSIP_SENDER_MAIN, GOSSIP_MENU_SPECIALIZATION_2);
-                AddGossipItemFor(player, GOSSIP_ICON_CHAT, "I want to be a Frost Mage.", GOSSIP_SENDER_MAIN, GOSSIP_MENU_SPECIALIZATION_3);
-                break;
-            case CLASS_WARLOCK:
-                AddGossipItemFor(player, GOSSIP_ICON_CHAT, "I want to be an Affliction Warlock.", GOSSIP_SENDER_MAIN, GOSSIP_MENU_SPECIALIZATION_1);
-                AddGossipItemFor(player, GOSSIP_ICON_CHAT, "I want to be a Demonology Warlock.", GOSSIP_SENDER_MAIN, GOSSIP_MENU_SPECIALIZATION_2);
-                AddGossipItemFor(player, GOSSIP_ICON_CHAT, "I want to be a Destruction Warlock.", GOSSIP_SENDER_MAIN, GOSSIP_MENU_SPECIALIZATION_3);
-                break;
-            case CLASS_DRUID:
-                AddGossipItemFor(player, GOSSIP_ICON_CHAT, "I want to be a Balance Druid.", GOSSIP_SENDER_MAIN, GOSSIP_MENU_SPECIALIZATION_1);
-                AddGossipItemFor(player, GOSSIP_ICON_CHAT, "I want to be a Feral Druid.", GOSSIP_SENDER_MAIN, GOSSIP_MENU_SPECIALIZATION_2);
-                AddGossipItemFor(player, GOSSIP_ICON_CHAT, "I want to be a Restoration Druid.", GOSSIP_SENDER_MAIN, GOSSIP_MENU_SPECIALIZATION_3);
-                break;
-            }
 
-            SendGossipMenuFor(player, GOSSIP_TEXT_CHOOSE_SPECIALIZATION, creature->GetGUID());
+    SendGossipMenuFor(player, GOSSIP_TEXT_CHOOSE_SPECIALIZATION, creature->GetGUID());
         }
         else if (action == GOSSIP_MENU_SPECIALIZATION_1 || action == GOSSIP_MENU_SPECIALIZATION_2 || action == GOSSIP_MENU_SPECIALIZATION_3)
         {
-            ClearGossipMenuFor(player);
-            AddGossipItemFor(player, GOSSIP_ICON_CHAT, "I'm sure!", GOSSIP_SENDER_MAIN, action + 100);
-            SendGossipMenuFor(player, GOSSIP_TEXT_CONFIRM_SPECIALIZATION, creature->GetGUID());
+    ClearGossipMenuFor(player);
+
+        if (player->GetSession()->GetSessionDbLocaleIndex() == LOCALE_zhCN)
+        {
+        AddGossipItemFor(player, GOSSIP_ICON_CHAT, "我确定！", GOSSIP_SENDER_MAIN, action + 100);
+        }
+        else
+        {
+        AddGossipItemFor(player, GOSSIP_ICON_CHAT, "I'm sure!", GOSSIP_SENDER_MAIN, action + 100);
+        }
+
+    SendGossipMenuFor(player, GOSSIP_TEXT_CONFIRM_SPECIALIZATION, creature->GetGUID());
         }
         else if (action == GOSSIP_MENU_SPECIALIZATION_1 + 100 || action == GOSSIP_MENU_SPECIALIZATION_2 + 100 || action == GOSSIP_MENU_SPECIALIZATION_3 + 100)
         {
